@@ -12,6 +12,9 @@ app.set('views', './views')
 app.set('view engine', 'pug')
 // end pug
 
+// static file
+app.use(express.static('public'))
+
 // connect database
 database.connect();
 // end connect database
